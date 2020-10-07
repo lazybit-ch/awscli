@@ -1,4 +1,4 @@
-FROM python:3.8.6-alpine
+FROM python:3.9.0-alpine
 
 ARG AWSCLI_VERSION
 ENV AWSCLI_VERSION=${AWSCLI_VERSION:-1.18.21}
