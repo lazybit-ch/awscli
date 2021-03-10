@@ -7,6 +7,6 @@ RUN apk add --no-cache \
         groff=1.22.4-r1 \
         less=563-r0
 
-RUN python3.9 -m pip install awscli==${AWSCLI_VERSION}
+RUN python3.9 -m pip install --no-cache-dir awscli==${AWSCLI_VERSION}
 
 ENTRYPOINT ["aws"]
